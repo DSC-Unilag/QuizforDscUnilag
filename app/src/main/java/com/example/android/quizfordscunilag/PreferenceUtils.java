@@ -2,18 +2,18 @@ package com.example.android.quizfordscunilag;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 
 public class PreferenceUtils {
-    private static int mScore;
 
     public static void updateScore(Context context, int score) {
-        SharedPreferences sharedPreferences = context.getSharedPreferences("MyScore", context.MODE_PRIVATE);
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putInt("score", score).commit();
-        mScore = score;
     }
 
-    public static int getScore() {
-        return mScore;
+    public static int getScore(Context context) {
+        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(context);
+        return sharedPreferences.getInt("score", 0);
     }
 }
