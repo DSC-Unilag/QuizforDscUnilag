@@ -8,12 +8,13 @@
     tools:context=".QuestionFive">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/img_wd"
+        android:layout_height="@dimen/img_ht"
         android:layout_gravity="center_horizontal"
         android:paddingBottom="@dimen/space"
+        android:layout_marginBottom="@dimen/space"
         android:scaleType="centerCrop"
-        android:src="@drawable/eko_bridge" />
+        android:src="@drawable/shooting_star" />
 
     <TextView
         android:layout_width="wrap_content"

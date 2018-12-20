@@ -7,6 +7,7 @@
     android:padding="@dimen/quest_lay_pad"
     tools:context=".QuestionTen">
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,17 +55,17 @@
             android:text="@string/back" />
 
         <Button
-
-
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
+            android:onClick="reset"
             android:text="@string/reset_button" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"
+            android:onClick="submit"
             android:text="@string/submit_button" />
     </RelativeLayout>
 </LinearLayout>

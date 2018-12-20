@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class QuestionFour extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -18,21 +18,26 @@ public class QuestionFour extends AppCompatActivity {
     public void next(View v) {
         RadioButton ansFour = findViewById(R.id.ans4);
         if (ansFour.isChecked()) {
-//            ++score;
             TextView text = findViewById(R.id.msg_four);
             text.setText(R.string.correct);
             text.setVisibility(View.VISIBLE);
+            Score.setScore(4, true);
         } else {
             TextView text = findViewById(R.id.msg_four);
             text.setText(R.string.wrong);
             text.setVisibility(View.VISIBLE);
+            Score.setScore(4, false);
         }
         Intent i = new Intent(this, QuestionFive.class);
+        int scc = Score.getmScore(4);
+        String sc = " " + scc;
+        Toast.makeText(QuestionFour.this, sc, Toast.LENGTH_LONG).show();
         startActivity(i);
     }
 
     public void previous(View v) {
         Intent i = new Intent(this, QuestionThree.class);
         startActivity(i);
+        finish();
     }
 }

@@ -8,11 +8,12 @@
     tools:context=".QuestionSix">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="@dimen/space"
         android:layout_gravity="center_horizontal"
-        android:paddingBottom="@dimen/space"
-        android:src="@drawable/statue_of_lib" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/pluto" />
 
     <TextView
         android:layout_width="wrap_content"

@@ -7,12 +7,6 @@
     android:padding="@dimen/quest_lay_pad"
     tools:context=".QuestionSeven">
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:paddingBottom="@dimen/space" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

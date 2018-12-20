@@ -6,9 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class QuestionTwo extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,21 +23,26 @@ public class QuestionTwo extends AppCompatActivity {
         Boolean ansTwoBBool = ansTwoB.isChecked();
         Boolean ansTwoCBool = ansTwoC.isChecked();
         if (ansTwoABool && ansTwoBBool && !ansTwoCBool) {
-            //++score;
             TextView text = findViewById(R.id.msg_two);
             text.setText(R.string.correct);
             text.setVisibility(View.VISIBLE);
+            Score.setScore(2, true);
         } else {
             TextView text = findViewById(R.id.msg_two);
             text.setText(R.string.wrong);
             text.setVisibility(View.VISIBLE);
+            Score.setScore(2, false);
         }
         Intent i = new Intent(this, QuestionThree.class);
+        int scc = Score.getmScore(2);
+        String sc = " " + scc;
+        Toast.makeText(QuestionTwo.this, sc, Toast.LENGTH_LONG).show();
         startActivity(i);
     }
 
     public void previous(View v) {
-        Intent i = new Intent(this, MainActivity.class);
+        Intent i = new Intent(this, QuestionOne.class);
         startActivity(i);
+        finish();
     }
 }

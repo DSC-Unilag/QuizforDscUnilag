@@ -8,10 +8,10 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class QuestionSeven extends AppCompatActivity {
-    boolean flag = false;
-
+    private boolean flag = false;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,21 +38,26 @@ public class QuestionSeven extends AppCompatActivity {
 
     public void next(View v) {
         if (flag) {
-            //++score;
             TextView text = findViewById(R.id.msg_seven);
             text.setText(R.string.correct);
             text.setVisibility(View.VISIBLE);
+            Score.setScore(7, true);
         } else {
             TextView text = findViewById(R.id.msg_seven);
             text.setText(R.string.wrong);
             text.setVisibility(View.VISIBLE);
+            Score.setScore(7, false);
         }
         Intent i = new Intent(this, QuestionEight.class);
+        int score = Score.getmScore(7);
+        String scoreString = " " + score;
+        Toast.makeText(QuestionSeven.this, scoreString, Toast.LENGTH_LONG).show();
         startActivity(i);
     }
 
     public void previous(View v) {
         Intent i = new Intent(this, QuestionSix.class);
         startActivity(i);
+        finish();
     }
 }

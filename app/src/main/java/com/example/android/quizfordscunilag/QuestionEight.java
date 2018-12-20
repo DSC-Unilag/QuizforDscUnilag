@@ -5,11 +5,11 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class QuestionEight extends AppCompatActivity {
     ToggleButton tog_eight;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,21 +19,26 @@ public class QuestionEight extends AppCompatActivity {
 
     public void next(View v) {
         if (tog_eight.isChecked()) {
-//            ++score;
             TextView text = findViewById(R.id.msg_eight);
             text.setText(R.string.correct);
             text.setVisibility(View.VISIBLE);
+            Score.setScore(8, true);
         } else {
             TextView text = findViewById(R.id.msg_eight);
             text.setText(R.string.wrong);
             text.setVisibility(View.VISIBLE);
+            Score.setScore(8, false);
         }
         Intent i = new Intent(this, QuestionNine.class);
+        int score = Score.getmScore(8);
+        String scoreString = " " + score;
+        Toast.makeText(QuestionEight.this, scoreString, Toast.LENGTH_LONG).show();
         startActivity(i);
     }
 
     public void previous(View v) {
         Intent i = new Intent(this, QuestionSeven.class);
         startActivity(i);
+        finish();
     }
 }

@@ -8,11 +8,11 @@
     tools:context=".QuestionFour">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/img_wd"
+        android:layout_height="@dimen/img_ht"
         android:layout_gravity="center_horizontal"
         android:paddingBottom="@dimen/space"
-        android:src="@drawable/eiffel_tower" />
+        android:src="@drawable/earth" />
 
     <TextView
         android:layout_width="wrap_content"

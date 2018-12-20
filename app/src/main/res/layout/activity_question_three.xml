@@ -3,21 +3,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#040301"
     android:orientation="vertical"
     android:padding="@dimen/quest_lay_pad"
     tools:context=".QuestionThree">
 
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/space"
+        android:paddingBottom="@dimen/space"
+        android:scaleType="centerCrop"
+        android:src="@drawable/satellite" />
+
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
         android:paddingBottom="@dimen/space"
         android:text="@string/Q3"
         android:textStyle="bold" />
 
     <RadioGroup
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space"
+        android:background="@android:color/white">
 
         <RadioButton
             android:id="@+id/ans3"

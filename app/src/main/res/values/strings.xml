@@ -1,24 +1,24 @@
 <resources>
-    <string name="app_name">Quiz for Dsc Unilag</string>
-    <string name="Q1">1. Look at this series: 7, 10, 8, 11, 9, 12. What number should come next</string>
-    <string name="Q2">2. Which of the following is a Nigerian past president?</string>
-    <string name="ans2a">Goodluck Johnathan</string>
-    <string name="ans2b">Shehu Shagari</string>
-    <string name="ans2c">Nyesomm Wike</string>
-    <string name="Q3">3. My friend and I ... at the National History Museum.</string>
-    <string name="ans3a">are</string>
-    <string name="ans3b">am</string>
-    <string name="ans3c">is</string>
-    <string name="Q4">4. They ... very much time to finish their work.</string>
-    <string name="ans4a">don\'t have</string>
-    <string name="ans4b">doesn"t have</string>
-    <string name="ans4c">don\'t has</string>
-    <string name="Q5">5. what state in Nigeria can this bridge be found?</string>
-    <string name="ans5a">Lagos</string>
-    <string name="ans5b">Abuja</string>
-    <string name="ans5c">Rivers</string>
-    <string name="Q6">6. Is this the statue of liberty?</string>
-    <string name="Q7">7. This is carlos ... my friend and my classmate.</string>
+    <string name="app_name">Planets</string>
+    <string name="Q1">1. There are ...... planets in the solar system</string>
+    <string name="Q2">2. Which of the following is/are planets?</string>
+    <string name="ans2a">a) mercury</string>
+    <string name="ans2b">b) mars</string>
+    <string name="ans2c">c) krypton</string>
+    <string name="Q3">3. The satellite that orbits a planets is a?</string>
+    <string name="ans3a">a) moon</string>
+    <string name="ans3b">b) meteor</string>
+    <string name="ans3c">c) comet</string>
+    <string name="Q4">4. The distance that light travels in one year is called:</string>
+    <string name="ans4a">a) a light year</string>
+    <string name="ans4b">b) a light ray</string>
+    <string name="ans4c">c)an astronomical unit</string>
+    <string name="Q5">5. The correct name for a \'shooting star\' is a:</string>
+    <string name="ans5a">a) meteor</string>
+    <string name="ans5b">b) star</string>
+    <string name="ans5c">c)fire ball</string>
+    <string name="Q6">6. Pluto is no longer a planet</string>
+    <string name="Q7">7. The theory that the universe originated from s gigantic explosion of a central large and dense mass is the: .</string>
     <string name="submit_button">submit</string>
     <string name="reset_button">reset</string>
     <string name="name">name</string>
@@ -26,20 +26,24 @@
     <string name="on">true</string>
     <string name="off">false</string>
     <string-array name="seven">
-        <item>a) His</item>
-        <item>b) He</item>
-        <item>c) He\'s</item>
+        <item>a) Organic Evolution Theory</item>
+        <item>b) Steady State Theory</item>
+        <item>c) Big Bang Theory</item>
     </string-array>
-    <string name="Q8">8. Is this a photo of the Eiffel tower? </string>
-    <string name="Q9">9. This is not the eko bridge in Lagos,Nigeria or is it?</string>
-    <string name="Q10">10. His sister likes to ... at a beach near our home.</string>
-    <string name="ans10a">swims</string>
-    <string name="ans10b">swim</string>
-    <string name="ans10c">swimming</string>
+    <string name="Q8">8. Is this a photo of the Earth? </string>
+    <string name="Q9">9. The sun is 4.6 billion years old</string>
+    <string name="Q10">10. A collection of hundreds of stars around a common centre is called a:.</string>
+    <string name="ans10a">a) light year</string>
+    <string name="ans10b">b) galaxy</string>
+    <string name="ans10c">c) solar system</string>
     <string name="addOne">+</string>
     <string name="removeOne">-</string>
     <string name="correct">correct</string>
     <string name="wrong">wrong</string>
     <string name="next">next</string>
     <string name="back">back</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="start_quiz">start quiz</string>
+    <string name="app_description">Planets provides quiz questions about the solar system and the universe</string>
 </resources>

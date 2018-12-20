@@ -8,11 +8,13 @@
     tools:context=".QuestionFour">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/space"
         android:paddingBottom="@dimen/space"
-        android:src="@drawable/eko_bridge" />
+        android:scaleType="centerCrop"
+        android:src="@drawable/sun" />
 
     <TextView
         android:layout_width="wrap_content"
