@@ -6,13 +6,12 @@
     android:layout_height="match_parent"
     android:background="@color/main_background"
     tools:context=".MainActivity">
-
     <TextView
         android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:text="@string/app_description"
         android:layout_margin="@dimen/space"
         android:padding="@dimen/space"
-        android:text="@string/app_description"
         android:textColor="@android:color/white" />
 
     <LinearLayout
@@ -26,35 +25,33 @@
             android:layout_height="@dimen/editext_width"
             android:layout_gravity="center_horizontal"
             android:src="@drawable/planets" />
-
         <android.support.design.widget.TextInputLayout
             android:id="@+id/edit_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:counterEnabled="true"
             app:errorEnabled="true"
+            app:counterEnabled="true"
             app:errorTextAppearance="@style/error"
             app:hintTextAppearance="@style/error">
-
             <android.support.design.widget.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="@dimen/space"
-                android:background="@drawable/edit_text"
                 android:hint="username"
                 android:inputType="text"
-                android:maxLength="7"
-                android:padding="@dimen/space" />
+                android:layout_marginBottom="@dimen/space"
+                android:background="@drawable/edit_text"
+                android:padding="@dimen/space"
+                android:maxLength="7" />
         </android.support.design.widget.TextInputLayout>
 
         <Button
             android:id="@+id/login"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
+            android:text="@string/start_quiz"
             android:layout_marginTop="20dp"
             android:background="@color/colorAccent"
-            android:onClick="startQuiz"
-            android:text="@string/start_quiz"
-            android:textColor="@android:color/white" />
+            android:textColor="@android:color/white"
+            android:onClick="startQuiz" />
     </LinearLayout>
 </RelativeLayout>

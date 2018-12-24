@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class QuestionFive extends AppCompatActivity {
     int score;
@@ -14,6 +13,7 @@ public class QuestionFive extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_five);
+        getSupportActionBar().setTitle("Question 5");
     }
 
     public void next(View v) {
@@ -31,8 +31,6 @@ public class QuestionFive extends AppCompatActivity {
         }
         Intent i = new Intent(this, QuestionSix.class);
         int score = Score.getmScore(5);
-        String scoreString = " " + score;
-        Toast.makeText(QuestionFive.this, scoreString, Toast.LENGTH_LONG).show();
         startActivity(i);
     }
 

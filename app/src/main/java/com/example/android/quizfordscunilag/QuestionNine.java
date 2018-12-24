@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 import android.widget.ToggleButton;
 
 public class QuestionNine extends AppCompatActivity {
@@ -14,6 +13,7 @@ public class QuestionNine extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_nine);
+        getSupportActionBar().setTitle("Question 9");
         tog_nine = findViewById(R.id.tog_nine);
     }
 
@@ -31,8 +31,6 @@ public class QuestionNine extends AppCompatActivity {
         }
         Intent i = new Intent(this, QuestionTen.class);
         int score = Score.getmScore(9);
-        String scoreString = " " + score;
-        Toast.makeText(QuestionNine.this, scoreString, Toast.LENGTH_LONG).show();
         startActivity(i);
     }
 

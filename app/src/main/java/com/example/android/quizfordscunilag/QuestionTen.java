@@ -14,6 +14,7 @@ public class QuestionTen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_ten);
+        getSupportActionBar().setTitle("Question 10");
         ans_ten = findViewById(R.id.ans_ten);
     }
 

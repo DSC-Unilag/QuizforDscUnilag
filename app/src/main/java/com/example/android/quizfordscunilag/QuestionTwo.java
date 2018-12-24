@@ -6,13 +6,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class QuestionTwo extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_two);
+        getSupportActionBar().setTitle("Question 2");
     }
 
     public void next(View v) {
@@ -35,8 +35,6 @@ public class QuestionTwo extends AppCompatActivity {
         }
         Intent i = new Intent(this, QuestionThree.class);
         int scc = Score.getmScore(2);
-        String sc = " " + scc;
-        Toast.makeText(QuestionTwo.this, sc, Toast.LENGTH_LONG).show();
         startActivity(i);
     }
 

@@ -25,7 +25,9 @@
         <activity android:name=".QuestionEight" />
         <activity android:name=".QuestionNine" />
         <activity android:name=".QuestionTen" />
-        <activity android:name=".QuestionOne"></activity>
+        <activity
+            android:name=".QuestionOne"
+            android:parentActivityName="com.example.android.quizfordscunilag.MainActivity"></activity>
     </application>
 
 </manifest>

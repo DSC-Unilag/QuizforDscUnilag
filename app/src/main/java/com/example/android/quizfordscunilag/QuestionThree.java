@@ -6,12 +6,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class QuestionThree extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getSupportActionBar().setTitle("Question 3");
         setContentView(R.layout.activity_question_three);
     }
 
@@ -30,8 +30,6 @@ public class QuestionThree extends AppCompatActivity {
         }
         Intent i = new Intent(this, QuestionFour.class);
         int score = Score.getmScore(3);
-        String scoreString = " " + score;
-        Toast.makeText(QuestionThree.this, scoreString, Toast.LENGTH_LONG).show();
         startActivity(i);
     }
 

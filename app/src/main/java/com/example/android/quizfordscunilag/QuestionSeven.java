@@ -8,7 +8,6 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class QuestionSeven extends AppCompatActivity {
     private boolean flag = false;
@@ -16,6 +15,7 @@ public class QuestionSeven extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question_seven);
+        getSupportActionBar().setTitle("Question 7");
         Spinner seven = findViewById(R.id.seven);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.seven, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -23,10 +23,7 @@ public class QuestionSeven extends AppCompatActivity {
         seven.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if (position == 2)
-                    flag = true;
-                else
-                    flag = false;
+                flag = position == 2;
             }
 
             @Override
@@ -50,8 +47,6 @@ public class QuestionSeven extends AppCompatActivity {
         }
         Intent i = new Intent(this, QuestionEight.class);
         int score = Score.getmScore(7);
-        String scoreString = " " + score;
-        Toast.makeText(QuestionSeven.this, scoreString, Toast.LENGTH_LONG).show();
         startActivity(i);
     }
 
