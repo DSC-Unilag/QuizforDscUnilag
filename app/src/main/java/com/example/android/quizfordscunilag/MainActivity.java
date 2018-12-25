@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void tellStory(View v) {
-        String url = "http://www.google.com";
+        String url = "https://twitter.com/keeper_of_codes/status/1077546089941790720?s=19";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
