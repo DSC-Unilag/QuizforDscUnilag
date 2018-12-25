@@ -6,12 +6,27 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/colorPrimary</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="radioButtonStyle">@style/radioStyle</item>
+        <item name="buttonStyle">@style/buttonStyle</item>
     </style>
 
     <style name="error" parent="TextAppearance.AppCompat.Small">
         <!-- Customize your theme here. -->
         <item name="android:textColor">@android:color/white</item>
         <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="radioStyle" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="buttonStyle" parent="Widget.AppCompat.Button">
+        <!-- Customize your theme here. -->
+        <item name="android:textColor">@android:color/black</item>
     </style>
 
 </resources>

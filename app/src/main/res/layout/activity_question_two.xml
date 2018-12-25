@@ -19,19 +19,22 @@
         android:id="@+id/ansTwoA"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ans2a" />
+        android:text="@string/ans2a"
+        android:textColor="@android:color/white" />
 
     <CheckBox
         android:id="@+id/ansTwoB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ans2b" />
+        android:text="@string/ans2b"
+        android:textColor="@android:color/white" />
 
     <CheckBox
         android:id="@+id/ansTwoC"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/ans2c" />
+        android:text="@string/ans2c"
+        android:textColor="@android:color/white" />
 
     <TextView
         android:id="@+id/msg_two"

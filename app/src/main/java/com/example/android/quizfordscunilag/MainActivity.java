@@ -1,6 +1,7 @@
 package com.example.android.quizfordscunilag;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -24,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void tellStory(View v) {
+        String url = "http://www.google.com";
+        Intent i = new Intent(Intent.ACTION_VIEW);
+        i.setData(Uri.parse(url));
+        startActivity(i);
+    }
     public boolean validate() {
         String username = editLayout.getEditText().getText().toString().trim();
         if (username.isEmpty()) {
